@@ -23,7 +23,7 @@ st.title("My AI Bot")
 # st.write("Ask Anything About Me :smile:")
 user_q = st.text_input("Ask Anything About Me :smile:")
 if st.button("Ask", use_container_width=400):
-    prompt = persona + "Here is the question the user asked" + user_q
+    prompt = persona +  "Here is the question that the user asked: "  + user_q
     response = model.generate_content(prompt)
     st.write(response.text)
 
